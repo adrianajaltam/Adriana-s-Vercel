@@ -39,7 +39,7 @@
                             <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                             <li class="nav-item"><a class="nav-link" href="about-me.html">About</a></li>
                             <li class="nav-item"><a class="nav-link" href="experience.html">Experience</a></li>
-                            <li class="nav-item"><a class="nav-link" href="contacts.html">Contact</a></li>
+                            <!--<li class="nav-item"><a class="nav-link" href="contacts.html">Contact</a></li>-->
                         </ul>
                     </div>
                 </div>
@@ -57,10 +57,29 @@
                                 <h2 class="text-primary fw-bolder mb-0">Experience</h2>
                                 <!-- Download resume button-->
                                 <!-- Note: Set the link href target to a PDF file within your project-->
-                                <a class="btn btn-primary px-4 py-3" href="./assets/_APMAdrianaAltamirano2024.pdf">
+                                <a class="btn btn-primary px-4 py-3" href="" id="resumeButton">
                                     <div class="d-inline-block bi bi-download me-2"></div>
                                     Download Resume
                                 </a>
+                            </div>
+                            <!-- Experience Card 0-->
+                            <div class="card shadow border-0 rounded-4 mb-5">
+                                <div class="card-body p-5">
+                                    <div class="row align-items-center gx-5">
+                                        <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                                            <div class="bg-light p-4 rounded-4">
+                                                <div class="text-primary fw-bolder mb-2">January 2024 - Present</div>
+                                                <div class="small fw-bolder">Product Manager</div>
+                                                <div class="small text-muted">SOMOS.tech</div>
+                                                <div class="small text-muted">Remote, USA</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-8"><div>Led the strategic development of an AI product, crafting its technical specifications 
+                                            based on in-depth market insights and defining its vision and features. 
+                                            Collaborating with a team of three, blending product design and engineering skills to align the product with our 
+                                            nonprofit's mission, serving over 1,000 members and user needs.</div></div>
+                                    </div>
+                                </div>
                             </div>
                             <!-- Experience Card 1-->
                             <div class="card shadow border-0 rounded-4 mb-5">
@@ -208,7 +227,7 @@
                             <li><a href="index.html" class="text-muted mx-2">Home</a></li>
                             <li><a href="about-me.html" class="text-muted mx-2">About</a></li>
                             <li><a href="experience.html" class="text-muted mx-2">Experience</a></li>
-                            <li><a href="contacts.html" class="text-muted mx-2">Contact</a></li>
+                            <!--<li><a href="contacts.html" class="text-muted mx-2">Contact</a></li>-->
                             <!-- Add any additional links here -->
                         </ul>
                     </div>
@@ -225,6 +244,12 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+        <!--OnClick Event-->
+        <script>
+            document.getElementById('resumeButton').addEventListener('click', function() {
+                window.open('./assets/_APMAdrianaAltamirano2024.pdf', '_blank');
+            });
+        </script>        
          <!--Live Clock Script-->
          <script>
             function showTime() {
